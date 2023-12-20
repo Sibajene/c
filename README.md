@@ -41,8 +41,8 @@ This React application allows users to register children, view a list of registe
 
 8. **Contributing:**
    - Fork the repository.
-   - Create a branch (`git checkout -b feature/your-feature-name`).
+   - Create a branch (`git checkout -b https://github.com/Sibajene/child-reg`).
    - Commit your changes (`git commit -m 'Add some feature'`).
-   - Push to the branch (`git push origin feature/your-feature-name`).
+   - Push to the branch (`git push origin (https://github.com/Sibajene/child-reg)https://github.com/Sibajene/child-reg`).
    - Create a pull request.
 
