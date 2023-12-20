@@ -11,13 +11,11 @@ const App = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Simulate a network failure
     const simulateNetworkFailure = Math.random() < 0.2;
 
     if (simulateNetworkFailure) {
       setError('Network failure. Please try again later.');
     } else {
-      // Load children from local storage on app mount
       const storedChildren = getChildren();
       if (storedChildren) {
         setChildren(storedChildren);
@@ -26,16 +24,13 @@ const App = () => {
   }, []);
 
   const handleRegister = (child) => {
-    // Save the new child to local storage and update state
     saveChild(child);
     setChildren([...children, child]);
 
-    // Display an alert when the child is successfully registered
     alert('Child Successfully Registered');
   };
 
   const handleSort = (key) => {
-    // Implement sorting logic based on the selected key
     const sortedChildren = [...children].sort((a, b) => {
       if (key === 'name') {
         return a.firstName.localeCompare(b.firstName);
@@ -49,7 +44,6 @@ const App = () => {
   };
 
   const handleSelect = (child) => {
-    // Set the selected child for the profile view
     setSelectedChild(child);
   };
 
