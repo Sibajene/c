@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 60vh; /* Use min-height instead of height */
+  min-height: 60vh; 
   background-color: #fff;
 }
 
