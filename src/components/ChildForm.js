@@ -28,7 +28,6 @@ const ChildForm = ({ onRegister }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onRegister(formData);
-    // Additional validation logic can be added here
   };
 
   return (
